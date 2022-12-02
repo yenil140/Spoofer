@@ -1,5 +1,5 @@
 -- Made by Real Panda (https://v3rmillion.net/member.php?action=profile&uid=46812)
--- Added Sport to other Exploits by ArasOfficial#8439. Credits to Iris for making the Compat.
+-- Added Sport to other Exploits by ArasOfficial#8439. Credits to Iris#0410 for making the Compat.
 
 if identifyexecutor then
     if identifyexecutor ~= "Synapse X" then
