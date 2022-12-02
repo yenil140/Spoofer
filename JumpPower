@@ -1,6 +1,6 @@
 -- Made by ArasOfficial#8439
 
-local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
 local OldIndex = nil
 
 OldIndex = hookmetamethod(game, "__index", function(Self, Key)
