@@ -1,0 +1,16 @@
+-- Made by ArasOfficial#8439
+
+-- Made by ArasOfficial#8439
+
+local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+local OldIndex = nil
+
+OldIndex = hookmetamethod(game, "__index", function(Self, Key)
+     if Self == Humanoid and Key == "HipHeight" then
+         if Humanoid.RigType == Enum.HumanoidRigType.R6 then
+             return 0
+        else
+             return 0 -- If it errors, DM me.
+         end
+     end
+end)
