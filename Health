@@ -1,0 +1,10 @@
+-- Made by ArasOfficial#8439
+
+local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+local OldIndex = nil
+
+OldIndex = hookmetamethod(game, "__index", function(Self, Key)
+     if Self == Humanoid and Key == "Health" then
+         return 100
+     end
+end)
