@@ -4,7 +4,9 @@ local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChild
 local OldIndex = nil
 
 OldIndex = hookmetamethod(game, "__index", function(Self, Key)
-     if Self == Humanoid and Key == "WalkSpeed" then
-         return 16
-     end
+    if Self == Humanoid and Key == "WalkSpeed" then
+        return 16
+    end
+
+    return OldIndex(Self, Key)
 end)
