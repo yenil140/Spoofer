@@ -7,4 +7,6 @@ OldIndex = hookmetamethod(game, "__index", function(Self, Key)
      if Self == Humanoid and Key == "Health" then
          return 100
      end
+     
+     return OldIndex(Self, Key)
 end)
