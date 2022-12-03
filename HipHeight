@@ -1,7 +1,5 @@
 -- Made by ArasOfficial#8439
 
--- Made by ArasOfficial#8439
-
 local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
 local OldIndex = nil
 
