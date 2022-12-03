@@ -11,4 +11,6 @@ OldIndex = hookmetamethod(game, "__index", function(Self, Key)
              return 0 -- If it errors, DM me.
          end
      end
+     
+     return OldIndex(Self, Key)
 end)
